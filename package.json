@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/luisgarcia96/oh-my-food#readme",
   "dependencies": {
-    "sass": "^1.55.0"
+    "sass": "^1.55.0",
+    "sass-mq": "^6.0.0"
   }
 }

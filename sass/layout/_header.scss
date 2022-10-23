@@ -1,0 +1,13 @@
+@use "../abstracts" as a;
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .logo_container {
+        width: 100%;
+        text-align: center;
+        background-color: a.$color-white;
+    }
+}

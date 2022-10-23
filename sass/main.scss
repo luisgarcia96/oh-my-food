@@ -1,6 +1,16 @@
-@import "./utils/variables";
+//Vendors folder
+@use "./vendors/normalize";
 
-body {
-    background-color: $color-primary;
-    border: 15px solid $color-tertiare;
-}
+//Base folder
+@use "./base/typography";
+
+//Layout folder
+@use "./layout/header";
+@use "./layout/footer";
+
+//Components folder
+@use "./components/buttons";
+@use "./components/cards";
+
+//Pages folder
+@use "./pages/home";
