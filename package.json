@@ -1,0 +1,23 @@
+{
+  "name": "oh-my-food",
+  "version": "1.0.0",
+  "description": "Projet 3 du parcours Développeur JavaScript React chez OpenClassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/styles.css --style expanded",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisgarcia96/oh-my-food.git"
+  },
+  "author": "Luis Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luisgarcia96/oh-my-food/issues"
+  },
+  "homepage": "https://github.com/luisgarcia96/oh-my-food#readme",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}
