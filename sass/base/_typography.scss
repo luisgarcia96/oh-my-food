@@ -1,0 +1,17 @@
+@use "../abstracts" as a;
+@import url('http://fonts.cdnfonts.com/css/shrikhand');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body {
+    font-family: a.$ff-text;
+}
+
+h1 {
+    font-size: a.$fs-lg;
+    font-weight: a.$fw-bold;
+}
+
+h4 {
+    font-size: a.$fs-sm-md;
+    font-weight: a.$fw-light;
+}

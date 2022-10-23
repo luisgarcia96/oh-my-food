@@ -9,5 +9,20 @@ header {
         width: 100%;
         text-align: center;
         background-color: a.$color-white;
+        padding: 1.75rem 0 1rem 0;
+        @include a.box-shadow;
+    }
+
+    .location {
+        display: flex;
+        
+        &_icon {
+            display: flex;
+            align-items: center;
+        }
+
+        &_text {
+            margin: 1rem;
+        }
     }
 }

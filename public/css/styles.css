@@ -1,3 +1,5 @@
+@import url("http://fonts.cdnfonts.com/css/shrikhand");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -307,6 +309,20 @@ template {
   display: none;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -316,6 +332,18 @@ header .logo_container {
   width: 100%;
   text-align: center;
   background-color: #fff;
+  padding: 1.75rem 0 1rem 0;
+  box-shadow: rgba(120, 120, 120, 0.1) 0px 5px 5px;
+}
+header .location {
+  display: flex;
+}
+header .location_icon {
+  display: flex;
+  align-items: center;
+}
+header .location_text {
+  margin: 1rem;
 }
 
 body {
