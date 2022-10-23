@@ -314,13 +314,31 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 700;
+}
+
+h2 {
+  font-family: "Shrikhand", sans-serif;
+}
+
+h3 {
+  font-size: 1.25rem;
 }
 
 h4 {
   font-size: 1.25rem;
   font-weight: 300;
+}
+
+h5 {
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 400;
 }
 
 header {
@@ -344,6 +362,19 @@ header .location_icon {
 }
 header .location_text {
   margin: 1rem;
+}
+
+button {
+  color: #fff;
+  border-radius: 30px;
+  border: 0;
+  padding: 0 1rem 0 1rem;
+  background: linear-gradient(350deg, #9356dc 35%, #ff79da 100%);
+  box-shadow: rgba(120, 120, 120, 0.1) 0px 5px 5px;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 body {

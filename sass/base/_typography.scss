@@ -7,11 +7,29 @@ body {
 }
 
 h1 {
-    font-size: a.$fs-lg;
+    font-size: a.$fs-md-lg;
     font-weight: a.$fw-bold;
+}
+
+h2 {
+    font-family: a.$ff-title;
+}
+
+h3 {
+    font-size: a.$fs-sm-md;
 }
 
 h4 {
     font-size: a.$fs-sm-md;
     font-weight: a.$fw-light;
+}
+
+h5 {
+    font-size: a.$fs-sm;
+    font-weight: a.$fw-light;
+}
+
+p {
+    font-size: a.$fs-sm;
+    font-weight: a.$fw-normal;
 }
