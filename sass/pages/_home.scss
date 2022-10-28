@@ -2,4 +2,26 @@
 
 body {
     background-color: a.$gray-normal;
+
+    .discover_invitation {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: a.$gray-lighter;
+
+        &_title {
+            margin: 2rem 0 1rem 0;
+            padding: 0 2.5rem;
+        }
+
+        &_description {
+            margin: 0;
+            margin-bottom: 2rem;
+            padding: 0 1rem;
+        }
+
+        &_button {
+            margin-bottom: 3rem; 
+        }
+    }
 }
