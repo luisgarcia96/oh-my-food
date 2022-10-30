@@ -21,7 +21,68 @@ body {
         }
 
         &_button {
-            margin-bottom: 3rem; 
+            margin-bottom: 3rem;
+            
+            p {
+                margin: 1.125rem 0.75rem 1.125rem 0.75rem;
+            }
         }
+    }
+
+    .fonctionnement {
+        background-color: a.$color-white;
+        padding: 3rem 1rem;
+
+        &_title {
+            margin-bottom: 1.5rem;
+        }
+
+        &_content {
+            margin-left: 1rem;
+
+            &_step {
+                background-color: a.$gray-lighter;
+                display: flex;
+                padding: 1.5rem;
+                margin-bottom: 1.5rem;
+                border-radius: 1rem;
+                @include a.box-shadow;
+    
+                &_index {
+                    position: relative;
+                    p {
+                        color: a.$color-white;
+                        background-color: a.$color-primary;
+                        border-radius: 50%;
+                        padding: 0.25rem 0.55rem;
+                        text-align: center;
+                        position: absolute;
+                        top: -0.175rem;
+                        left: -2.5rem;
+                    }
+                }
+
+                &_icon {
+                    display: flex;
+                    align-items: center;
+                    font-size: a.$fs-sm-md;
+                    margin: auto 1.5rem auto 0.5rem;
+                    color: a.$gray-icon;
+                }
+
+                &_text {
+                    font-weight: a.$fw-bold;
+                }
+            }
+
+            .final_step {
+                @include a.background-opacity(a.$color-primary, 0.1);
+                
+                &_icon {
+                    color: a.$color-primary;
+                }
+            }
+        }
+
     }
 }

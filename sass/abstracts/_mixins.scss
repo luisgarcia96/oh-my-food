@@ -2,9 +2,13 @@
 //Make the gadient mixin to be a fonction of an input color
 
 @mixin box-shadow{
-    box-shadow: rgba(120, 120, 120, 0.1) 0px 5px 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px;
 }
 
 @mixin bg-gradient {
     background: linear-gradient(350deg, v.$color-primary 35%, v.$color-secondary 100%);;
+}
+
+@mixin background-opacity($color, $opacity: 0.3) {
+    background-color: rgba($color, $opacity);
 }

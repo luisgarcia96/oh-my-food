@@ -9,27 +9,33 @@ body {
 h1 {
     font-size: a.$fs-md-lg;
     font-weight: a.$fw-bold;
+    margin: 0;
 }
 
 h2 {
     font-family: a.$ff-title;
+    margin: 0;
 }
 
 h3 {
     font-size: a.$fs-sm-md;
+    margin: 0;
 }
 
 h4 {
     font-size: a.$fs-sm-md;
     font-weight: a.$fw-light;
+    margin: 0;
 }
 
 h5 {
     font-size: a.$fs-sm;
     font-weight: a.$fw-light;
+    margin: 0;
 }
 
 p {
     font-size: a.$fs-sm;
     font-weight: a.$fw-normal;
+    margin: 0;
 }

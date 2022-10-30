@@ -316,52 +316,91 @@ body {
 h1 {
   font-size: 1.75rem;
   font-weight: 700;
+  margin: 0;
 }
 
 h2 {
   font-family: "Shrikhand", sans-serif;
+  margin: 0;
 }
 
 h3 {
   font-size: 1.25rem;
+  margin: 0;
 }
 
 h4 {
   font-size: 1.25rem;
   font-weight: 300;
+  margin: 0;
 }
 
 h5 {
   font-size: 1.125rem;
   font-weight: 300;
+  margin: 0;
 }
 
 p {
   font-size: 1.125rem;
   font-weight: 400;
+  margin: 0;
 }
 
-header {
+.header {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-header .logo_container {
+.header .logo_container {
   width: 100%;
   text-align: center;
   background-color: #fff;
   padding: 1.75rem 0 1rem 0;
-  box-shadow: rgba(120, 120, 120, 0.1) 0px 5px 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px;
 }
-header .location {
+.header .location {
   display: flex;
 }
-header .location_icon {
+.header .location_icon {
   display: flex;
   align-items: center;
 }
-header .location_text {
+.header .location_text {
   margin: 1rem;
+}
+
+.footer {
+  background-color: #353535;
+  padding: 2rem;
+}
+.footer_logo_container {
+  margin-bottom: 1.5rem;
+}
+.footer_logo_container span {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.25rem;
+  color: #fff;
+}
+.footer_list {
+  padding: 0;
+}
+.footer_list_element {
+  list-style: none;
+  padding: 0.45rem 0;
+}
+.footer_list_element a {
+  text-decoration: none;
+  display: flex;
+}
+.footer_list_element a:visited {
+  color: #fff;
+}
+.footer_list_element a i {
+  margin-right: 1rem;
+}
+.footer_list_element a p {
+  margin: 0;
 }
 
 button {
@@ -370,7 +409,7 @@ button {
   border: 0;
   padding: 0 1rem 0 1rem;
   background: linear-gradient(350deg, #9356dc 35%, #ff79da 100%);
-  box-shadow: rgba(120, 120, 120, 0.1) 0px 5px 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px;
 }
 
 button:hover {
@@ -397,6 +436,56 @@ body .discover_invitation_description {
 }
 body .discover_invitation_button {
   margin-bottom: 3rem;
+}
+body .discover_invitation_button p {
+  margin: 1.125rem 0.75rem 1.125rem 0.75rem;
+}
+body .fonctionnement {
+  background-color: #fff;
+  padding: 3rem 1rem;
+}
+body .fonctionnement_title {
+  margin-bottom: 1.5rem;
+}
+body .fonctionnement_content {
+  margin-left: 1rem;
+}
+body .fonctionnement_content_step {
+  background-color: #f6f6f6;
+  display: flex;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px;
+}
+body .fonctionnement_content_step_index {
+  position: relative;
+}
+body .fonctionnement_content_step_index p {
+  color: #fff;
+  background-color: #9356dc;
+  border-radius: 50%;
+  padding: 0.25rem 0.55rem;
+  text-align: center;
+  position: absolute;
+  top: -0.175rem;
+  left: -2.5rem;
+}
+body .fonctionnement_content_step_icon {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  margin: auto 1.5rem auto 0.5rem;
+  color: #7E7E7E;
+}
+body .fonctionnement_content_step_text {
+  font-weight: 700;
+}
+body .fonctionnement_content .final_step {
+  background-color: rgba(147, 86, 220, 0.1);
+}
+body .fonctionnement_content .final_step_icon {
+  color: #9356dc;
 }
 
 /*# sourceMappingURL=styles.css.map */
