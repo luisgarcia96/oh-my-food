@@ -1,0 +1,40 @@
+@use "../abstracts" as a;
+
+.card {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: a.$color-black;
+    background-color: a.$color-white;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    @include a.box-shadow;
+
+    &_image_container {
+        height: 10rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 1rem 1rem 0 0;
+        }
+    }
+
+    &_info {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+
+        &_like_button {
+            display: flex;
+            align-items: center;
+            font-size: a.$fs-sm-md;
+            margin-right: 1rem;
+        }
+    }
+
+    &:visited {
+        color: a.$color-black;
+    }
+}

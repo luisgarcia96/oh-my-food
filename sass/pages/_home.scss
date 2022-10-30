@@ -85,4 +85,12 @@ body {
         }
 
     }
+
+    .restaurants {
+        padding: 3rem 1rem;
+
+        &_title {
+            margin-bottom: 1rem;
+        }
+    }
 }
