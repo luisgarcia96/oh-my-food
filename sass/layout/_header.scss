@@ -9,8 +9,12 @@
         width: 100%;
         text-align: center;
         background-color: a.$color-white;
-        padding: 1.75rem 0 1rem 0;
+        padding: 1.5rem 0 0.75rem 0;
         @include a.box-shadow;
+
+        img {
+            max-width: 11rem;
+        }
     }
 
     .location {
@@ -53,6 +57,9 @@
 
         &_logo_container {
             position: absolute;
+            img {
+                max-width: 11rem;
+            }
         }
     }
 }

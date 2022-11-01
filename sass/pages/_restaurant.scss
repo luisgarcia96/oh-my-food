@@ -1,0 +1,65 @@
+@use "../abstracts" as a;
+
+.restaurant {
+    
+    &_image_container {
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &_menu {
+        padding: 3rem 1rem 3.5rem 1rem;
+        border: 1px solid black;
+        border-radius: 3rem 3rem 0 0;
+
+        &_header {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+
+            &_title {
+                margin-right: 1.75rem;
+
+                p {
+                    font-family: a.$ff-title;
+                    font-size: a.$fs-md-lg;
+                }
+            }
+
+            &_like_button {
+                display: flex;
+                align-items: center;
+                font-size: a.$fs-md;
+                margin-right: auto;
+            }
+        }
+
+        &_offer {
+            margin-bottom: 3rem;
+
+            &_meal {
+                margin-bottom: 2rem;
+
+                &_title {
+                    text-transform: uppercase;   
+                }
+
+                &_plates_container {
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+        &_button {
+            display: flex;
+            justify-content: center;
+
+            p {
+                margin-left: 2rem;
+                margin-right: 2rem;
+            }
+        }
+    }
+}

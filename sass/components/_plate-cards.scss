@@ -1,0 +1,30 @@
+@use "../abstracts" as a;
+
+.plate_card {
+    background-color: a.$color-white;
+    border-radius: 1rem;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    @include a.box-shadow;
+
+    &_title {
+        margin-bottom: 0.25rem;
+    }
+
+    &_info {
+        display: flex;
+        justify-content: space-between;
+
+        &_details {
+            font-size: a.$fs-x-sm;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        &_price {
+            font-weight: a.$fw-bold;
+            margin-left: 1rem;
+        }
+    }
+}

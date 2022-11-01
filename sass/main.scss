@@ -9,8 +9,9 @@
 @use "./layout/footer";
 
 //Components folder
+@use "./components/restaurant-cards";
+@use "./components/plate-cards";
 @use "./components/buttons";
-@use "./components/cards";
 
 //Pages folder
 @use "./pages/home";
