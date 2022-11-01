@@ -26,4 +26,33 @@
             font-weight: a.$fw-bold;
         }
     }
+    
+    &_restaurant {
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+        padding-bottom: 0.75rem;
+        position: relative;
+        height: 2rem;
+
+
+        &_go_back_icon {
+            color: a.$color-black;
+            font-size: a.$fs-sm-md;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            position: absolute;
+            left: 1.5rem;
+            top: 1.25rem;
+
+            &:visited {
+                color: a.$color-black;
+            }
+        }
+
+        &_logo_container {
+            position: absolute;
+        }
+    }
 }

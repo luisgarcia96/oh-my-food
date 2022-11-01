@@ -370,6 +370,30 @@ p {
   margin: 1rem;
   font-weight: 700;
 }
+.header_restaurant {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 0.75rem;
+  position: relative;
+  height: 2rem;
+}
+.header_restaurant_go_back_icon {
+  color: #000;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  position: absolute;
+  left: 1.5rem;
+  top: 1.25rem;
+}
+.header_restaurant_go_back_icon:visited {
+  color: #000;
+}
+.header_restaurant_logo_container {
+  position: absolute;
+}
 
 .footer {
   background-color: #353535;
