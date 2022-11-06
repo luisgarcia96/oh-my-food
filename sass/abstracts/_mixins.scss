@@ -14,12 +14,12 @@
 }
 
 @mixin obj-scale {
+    transition: all 0.3 ease;
+    
     &:hover {
-        transition: all 0.3 ease;
         transform: scale(1.01);
     }
     &:active {
-        transition: all 0.3 ease;
         transform: scale(1.02);
     }
 }
