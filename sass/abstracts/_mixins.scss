@@ -12,3 +12,14 @@
 @mixin background-opacity($color, $opacity: 0.3) {
     background-color: rgba($color, $opacity);
 }
+
+@mixin obj-scale {
+    &:hover {
+        transition: all 0.3 ease;
+        transform: scale(1.01);
+    }
+    &:active {
+        transition: all 0.3 ease;
+        transform: scale(1.02);
+    }
+}

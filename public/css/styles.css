@@ -501,6 +501,14 @@ button {
   background: linear-gradient(350deg, #9356dc 35%, #ff79da 100%);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px;
 }
+button:hover {
+  transition: all 0.3 ease;
+  transform: scale(1.01);
+}
+button:active {
+  transition: all 0.3 ease;
+  transform: scale(1.02);
+}
 button p {
   margin: 1rem 0;
 }
