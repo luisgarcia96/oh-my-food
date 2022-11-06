@@ -3,6 +3,7 @@
 .restaurant {
     
     &_image_container {
+
         img {
             width: 100%;
             object-fit: cover;
@@ -10,9 +11,10 @@
     }
 
     &_menu {
-        padding: 3rem 1rem 3.5rem 1rem;
-        border: 1px solid black;
-        border-radius: 3rem 3rem 0 0;
+        padding: 2rem 1rem 2rem 1rem;
+        border-radius: 2rem 2rem 0 0;
+        transform: translateY(-2rem);
+        background-color: a.$gray-normal;
 
         &_header {
             display: flex;
@@ -43,8 +45,18 @@
                 margin-bottom: 2rem;
 
                 &_title {
-                    text-transform: uppercase;   
+                    text-transform: uppercase;
+                    margin-bottom: 0.25rem;   
+
+                    &_underline {
+                        height: 3px;
+                        width: 2.5rem;
+                        background-color: a.$color-tertiare;
+                        margin: 0;
+                        border: none;
+                    }
                 }
+
 
                 &_plates_container {
                     margin-top: 1rem;
