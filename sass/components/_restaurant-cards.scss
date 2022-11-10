@@ -12,12 +12,24 @@
 
     &_image_container {
         height: 10rem;
+        position: relative;
 
         img {
+            position: absolute;
             width: 100%;
             height: 100%;
             object-fit: cover;
             border-radius: 1rem 1rem 0 0;
+        }
+
+        &_tag {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-weight: a.$fw-bold;
+            color: a.$color-green;
+            background-color: a.$color-tertiare;
+            padding: 0.5rem;
         }
     }
 

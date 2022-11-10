@@ -32,10 +32,38 @@
             }
 
             &_like_button {
-                display: flex;
-                align-items: center;
+                width: 2rem;
                 font-size: a.$fs-md;
-                margin-right: auto;
+                position: relative;
+                cursor: pointer;
+    
+                .fa-solid {
+                    display: none;
+                    opacity: 0;
+                    position: absolute;
+                    top: 25%;
+                    @include a.bg-gradient;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    transition: all a.$tt-like-display ease;
+                }
+    
+                .fa-regular {
+                    position: absolute;
+                    top: 25%;
+                    transition: all a.$tt-like-display ease;
+                }
+    
+                &:hover {
+                    .fa-regular {
+                        opacity: 0;
+                    }
+    
+                    .fa-solid {
+                        display: initial;
+                        opacity: 1;
+                    }
+                }
             }
         }
 

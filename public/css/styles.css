@@ -446,12 +446,23 @@ p {
 }
 .card_image_container {
   height: 10rem;
+  position: relative;
 }
 .card_image_container img {
+  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 1rem 1rem 0 0;
+}
+.card_image_container_tag {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-weight: 700;
+  color: #289c7f;
+  background-color: #99e2d0;
+  padding: 0.5rem;
 }
 .card_info {
   padding: 1rem;
@@ -471,12 +482,12 @@ p {
   background: linear-gradient(350deg, #9356dc 35%, #ff79da 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: all 500ms ease;
+  transition: all 200ms ease;
 }
 .card_info_like_button .fa-regular {
   position: absolute;
   top: 25%;
-  transition: all 500ms ease;
+  transition: all 200ms ease;
 }
 .card_info_like_button:hover .fa-regular {
   opacity: 0;
@@ -629,9 +640,11 @@ p {
 .plate_card_main_container {
   flex-grow: 1;
   padding: 0.75rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .plate_card_main_container_title {
-  width: 100%;
   margin-bottom: 0.25rem;
 }
 .plate_card_main_container_title h3 {
@@ -640,7 +653,6 @@ p {
   text-overflow: ellipsis;
 }
 .plate_card_main_container_info {
-  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -656,21 +668,23 @@ p {
 }
 .plate_card_check {
   width: 0;
+  min-width: 0;
   background-color: #99e2d0;
   border-radius: 0 1rem 1rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  transition: all 500ms ease;
+  transition: all 300ms ease;
 }
 .plate_card_check i {
   color: #fff;
   opacity: 0;
-  transition: all 500ms ease;
+  transition: all 300ms ease;
 }
 .plate_card:hover .plate_card_check {
-  width: 4rem;
+  min-width: 3.5rem;
+  width: 3.5rem;
 }
 .plate_card:hover .plate_card_check i {
   opacity: 1;
@@ -802,10 +816,32 @@ body .restaurants_title {
   font-size: 1.75rem;
 }
 .restaurant_menu_header_like_button {
-  display: flex;
-  align-items: center;
+  width: 2rem;
   font-size: 1.5rem;
-  margin-right: auto;
+  position: relative;
+  cursor: pointer;
+}
+.restaurant_menu_header_like_button .fa-solid {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  top: 25%;
+  background: linear-gradient(350deg, #9356dc 35%, #ff79da 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 200ms ease;
+}
+.restaurant_menu_header_like_button .fa-regular {
+  position: absolute;
+  top: 25%;
+  transition: all 200ms ease;
+}
+.restaurant_menu_header_like_button:hover .fa-regular {
+  opacity: 0;
+}
+.restaurant_menu_header_like_button:hover .fa-solid {
+  display: initial;
+  opacity: 1;
 }
 .restaurant_menu_offer {
   margin-bottom: 3rem;
