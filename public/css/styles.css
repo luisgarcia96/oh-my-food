@@ -478,6 +478,54 @@ p {
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px;
 }
+.plate_card.card--1 {
+  animation-name: appear;
+  animation-duration: 1000ms;
+  animation-fill-mode: backwards;
+  animation-delay: 333.3333333333ms;
+}
+@keyframes appear {
+  from {
+    transform: translateY(-3rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.plate_card.card--2 {
+  animation-name: appear;
+  animation-duration: 1000ms;
+  animation-fill-mode: backwards;
+  animation-delay: 666.6666666667ms;
+}
+@keyframes appear {
+  from {
+    transform: translateY(-3rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.plate_card.card--3 {
+  animation-name: appear;
+  animation-duration: 1000ms;
+  animation-fill-mode: backwards;
+  animation-delay: 1000ms;
+}
+@keyframes appear {
+  from {
+    transform: translateY(-3rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .plate_card_main_container {
   flex-grow: 1;
   padding: 0.75rem;
@@ -536,7 +584,7 @@ button {
   padding: 0 1rem 0 1rem;
   background: linear-gradient(350deg, #9356dc 35%, #ff79da 100%);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px;
-  transition: all 0.3 ease;
+  transition: all 50ms ease;
 }
 button:hover {
   transform: scale(1.01);

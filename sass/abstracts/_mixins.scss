@@ -14,12 +14,41 @@
 }
 
 @mixin obj-scale {
-    transition: all 0.3 ease;
+    transition: all 50ms ease;
     
     &:hover {
         transform: scale(1.01);
     }
     &:active {
         transform: scale(1.02);
+    }
+}
+
+@mixin card-appear {
+    animation-name: appear;
+    animation-duration: 1000ms;
+    animation-fill-mode: backwards;
+
+    @keyframes appear {
+        from {
+            transform: translateY(-3rem);
+            opacity: 0;
+        } 
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+@mixin all-cards-appear($num-cards) {
+    $anim-delay: calc(v.$tt-card-display / $num-cards);
+
+
+    @for $i from 1 to $num-cards+1 {
+        &.card--#{$i} {
+            @include card-appear;
+            animation-delay: $anim-delay * $i;
+        }
     }
 }

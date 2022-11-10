@@ -1,5 +1,8 @@
 @use "../abstracts" as a;
 
+//The number of cards for this page
+$num-cards: 3;
+
 .plate_card {
     background-color: a.$color-white;
     border-radius: 1rem;
@@ -9,6 +12,7 @@
     overflow: hidden;
     cursor: pointer;
     @include a.box-shadow;
+    @include a.all-cards-appear($num-cards);
 
     &_main_container {
         flex-grow: 1;
