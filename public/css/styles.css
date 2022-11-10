@@ -471,26 +471,62 @@ p {
 .plate_card {
   background-color: #fff;
   border-radius: 1rem;
-  padding: 0.75rem;
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px;
 }
-.plate_card_title {
+.plate_card_main_container {
+  flex-grow: 1;
+  padding: 0.75rem;
+}
+.plate_card_main_container_title {
+  width: 100%;
   margin-bottom: 0.25rem;
 }
-.plate_card_info {
+.plate_card_main_container_title h3 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.plate_card_main_container_info {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.plate_card_info_details {
+.plate_card_main_container_info_details {
   font-size: 1rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.plate_card_info_price {
+.plate_card_main_container_info_price {
   font-weight: 700;
   margin-left: 1rem;
+}
+.plate_card_check {
+  width: 0;
+  background-color: #99e2d0;
+  border-radius: 0 1rem 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  transition: all 500ms ease;
+}
+.plate_card_check i {
+  color: #fff;
+  opacity: 0;
+  transition: all 500ms ease;
+}
+.plate_card:hover .plate_card_check {
+  width: 4rem;
+}
+.plate_card:hover .plate_card_check i {
+  opacity: 1;
+  transform: rotate(360deg);
 }
 
 button {
