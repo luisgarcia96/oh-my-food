@@ -6,7 +6,7 @@
 }
 
 @mixin bg-gradient {
-    background: linear-gradient(350deg, v.$color-primary 35%, v.$color-secondary 100%);;
+    background: linear-gradient(350deg, v.$color-primary 35%, v.$color-secondary 100%);
 }
 
 @mixin background-opacity($color, $opacity: 0.3) {
@@ -24,9 +24,9 @@
     }
 }
 
-@mixin card-appear {
+@mixin obj-appear {
     animation-name: appear;
-    animation-duration: 1000ms;
+    animation-duration: v.$tt-card-opacity;
     animation-fill-mode: backwards;
 
     @keyframes appear {
@@ -47,7 +47,7 @@
 
     @for $i from 1 to $num-cards+1 {
         &.card--#{$i} {
-            @include card-appear;
+            @include obj-appear;
             animation-delay: $anim-delay * $i;
         }
     }
