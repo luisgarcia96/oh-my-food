@@ -1,0 +1,48 @@
+@use "../abstracts" as a;
+$loader-colors: a.$color-primary, a.$color-secondary, a.$color-tertiare;
+
+.loader_container{
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+
+    svg {
+        width: 100px;
+        overflow: visible;
+
+        circle {
+            @for $i from 1 through length($loader-colors) {
+                &:nth-child(#{$i}) {
+                  stroke: nth($loader-colors, $i);
+                }
+            }
+            stroke: blue;
+            transform-origin: 50px 50px;
+            animation-name: spin;
+            animation-duration: a.$tt-loader-effect;
+            animation-iteration-count: 1;
+            animation-timing-function: cubic-bezier(0.35, 0.36, 0.72, 0.72);
+            animation-fill-mode: forwards;
+        }
+      }
+}
+  
+  @keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+      }
+      50% {
+        transform: rotate(360deg);
+        opacity: 0.95;
+      }
+      75% {
+        transform: rotate(540deg);
+        opacity: 0.9;
+      }
+      100% {
+        transform: rotate(720deg);
+        opacity: 0;
+      }
+  }

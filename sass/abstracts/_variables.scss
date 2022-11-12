@@ -13,9 +13,13 @@ $color-black: #000;
 $gray-icon: #7E7E7E;
 $color-green: #289c7f;
 
-//Transition time variables
+//Transition and animation time variables
 $tt-checkmark-display: 500ms;
 $tt-card-display: 500ms;
 $tt-card-opacity: 1000ms;
 $tt-like-display: 500ms;
 $tt-btn-effect: 200ms;
+$tt-loader-effect: 2000ms;
+
+//List of colors
+$color-chart: $color-primary, $color-secondary, $color-tertiare;
