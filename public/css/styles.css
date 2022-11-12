@@ -351,6 +351,19 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  opacity: 0;
+  animation-name: progressive-opacity;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  animation-delay: 2000ms;
+}
+@keyframes progressive-opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .header .logo_container {
   width: 100%;
@@ -404,6 +417,19 @@ p {
 .footer {
   background-color: #353535;
   padding: 2rem;
+  opacity: 0;
+  animation-name: progressive-opacity;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  animation-delay: 2000ms;
+}
+@keyframes progressive-opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .footer_logo_container {
   margin-bottom: 1.5rem;
@@ -771,6 +797,19 @@ body .discover_invitation {
   flex-direction: column;
   text-align: center;
   background-color: #f6f6f6;
+  opacity: 0;
+  animation-name: progressive-opacity;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  animation-delay: 2000ms;
+}
+@keyframes progressive-opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 body .discover_invitation_title {
   margin: 2rem 0 1rem 0;
@@ -790,6 +829,19 @@ body .discover_invitation_button p {
 body .fonctionnement {
   background-color: #fff;
   padding: 3rem 1rem;
+  opacity: 0;
+  animation-name: progressive-opacity;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  animation-delay: 2000ms;
+}
+@keyframes progressive-opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 body .fonctionnement_title {
   margin-bottom: 1.5rem;
@@ -836,6 +888,19 @@ body .fonctionnement_content .final_step_icon {
 }
 body .restaurants {
   padding: 3rem 1rem;
+  opacity: 0;
+  animation-name: progressive-opacity;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  animation-delay: 2000ms;
+}
+@keyframes progressive-opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 body .restaurants_title {
   margin-bottom: 1rem;

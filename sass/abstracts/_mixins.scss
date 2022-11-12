@@ -26,7 +26,26 @@
     }
 }
 
-@mixin obj-appear {
+@mixin opacity-appear {
+    opacity: 0;
+    animation-name: progressive-opacity;
+    animation-duration: v.$tt-opacity-appear-effect;
+    animation-fill-mode: forwards;
+    animation-delay: v.$tt-loader-effect;
+
+
+    @keyframes progressive-opacity {
+        from {
+            opacity: 0;
+        } 
+        to {
+            opacity: 1;
+        }
+    }
+
+}
+
+@mixin translate-appear {
     animation-name: appear;
     animation-duration: v.$tt-card-opacity;
     animation-fill-mode: backwards;
@@ -49,7 +68,7 @@
 
     @for $i from 1 to $num-cards+1 {
         &.card--#{$i} {
-            @include obj-appear;
+            @include translate-appear;
             animation-delay: $anim-delay * $i;
         }
     }
