@@ -13,10 +13,12 @@
     background-color: rgba($color, $opacity);
 }
 
-@mixin obj-scale {
-    transition: all 50ms ease;
+@mixin btn-effect {
+    transition: all v.$tt-btn-effect ease;
     
     &:hover {
+        opacity: 0.9;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 10px;
         transform: scale(1.01);
     }
     &:active {

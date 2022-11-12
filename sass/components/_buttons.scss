@@ -7,7 +7,7 @@ button {
     padding: 0 1rem 0 1rem;
     @include a.bg-gradient;
     @include a.box-shadow;
-    @include a.obj-scale;
+    @include a.btn-effect;
 
     p {
         margin: 1rem 0;
