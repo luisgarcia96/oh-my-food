@@ -586,7 +586,7 @@ p {
   animation-name: appear;
   animation-duration: 1000ms;
   animation-fill-mode: backwards;
-  animation-delay: 62.5ms;
+  animation-delay: 125ms;
 }
 @keyframes appear {
   from {
@@ -602,7 +602,7 @@ p {
   animation-name: appear;
   animation-duration: 1000ms;
   animation-fill-mode: backwards;
-  animation-delay: 125ms;
+  animation-delay: 250ms;
 }
 @keyframes appear {
   from {
@@ -618,7 +618,7 @@ p {
   animation-name: appear;
   animation-duration: 1000ms;
   animation-fill-mode: backwards;
-  animation-delay: 187.5ms;
+  animation-delay: 375ms;
 }
 @keyframes appear {
   from {
@@ -634,7 +634,7 @@ p {
   animation-name: appear;
   animation-duration: 1000ms;
   animation-fill-mode: backwards;
-  animation-delay: 250ms;
+  animation-delay: 500ms;
 }
 @keyframes appear {
   from {
@@ -650,7 +650,7 @@ p {
   animation-name: appear;
   animation-duration: 1000ms;
   animation-fill-mode: backwards;
-  animation-delay: 312.5ms;
+  animation-delay: 625ms;
 }
 @keyframes appear {
   from {
@@ -666,7 +666,7 @@ p {
   animation-name: appear;
   animation-duration: 1000ms;
   animation-fill-mode: backwards;
-  animation-delay: 375ms;
+  animation-delay: 750ms;
 }
 @keyframes appear {
   from {
@@ -682,7 +682,7 @@ p {
   animation-name: appear;
   animation-duration: 1000ms;
   animation-fill-mode: backwards;
-  animation-delay: 437.5ms;
+  animation-delay: 875ms;
 }
 @keyframes appear {
   from {
@@ -698,7 +698,7 @@ p {
   animation-name: appear;
   animation-duration: 1000ms;
   animation-fill-mode: backwards;
-  animation-delay: 500ms;
+  animation-delay: 1000ms;
 }
 @keyframes appear {
   from {
