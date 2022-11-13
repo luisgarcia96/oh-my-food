@@ -1,7 +1,7 @@
 @use "../abstracts" as a;
 
 //The number of cards in the page
-$num-cards: 8;
+$num-cards: 10;
 
 .plate_card {
     background-color: a.$color-white;

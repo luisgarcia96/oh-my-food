@@ -586,7 +586,7 @@ p {
   animation-name: appear;
   animation-duration: 1000ms;
   animation-fill-mode: backwards;
-  animation-delay: 125ms;
+  animation-delay: 100ms;
 }
 @keyframes appear {
   from {
@@ -602,7 +602,7 @@ p {
   animation-name: appear;
   animation-duration: 1000ms;
   animation-fill-mode: backwards;
-  animation-delay: 250ms;
+  animation-delay: 200ms;
 }
 @keyframes appear {
   from {
@@ -618,7 +618,7 @@ p {
   animation-name: appear;
   animation-duration: 1000ms;
   animation-fill-mode: backwards;
-  animation-delay: 375ms;
+  animation-delay: 300ms;
 }
 @keyframes appear {
   from {
@@ -634,7 +634,7 @@ p {
   animation-name: appear;
   animation-duration: 1000ms;
   animation-fill-mode: backwards;
-  animation-delay: 500ms;
+  animation-delay: 400ms;
 }
 @keyframes appear {
   from {
@@ -650,7 +650,7 @@ p {
   animation-name: appear;
   animation-duration: 1000ms;
   animation-fill-mode: backwards;
-  animation-delay: 625ms;
+  animation-delay: 500ms;
 }
 @keyframes appear {
   from {
@@ -666,7 +666,7 @@ p {
   animation-name: appear;
   animation-duration: 1000ms;
   animation-fill-mode: backwards;
-  animation-delay: 750ms;
+  animation-delay: 600ms;
 }
 @keyframes appear {
   from {
@@ -682,7 +682,7 @@ p {
   animation-name: appear;
   animation-duration: 1000ms;
   animation-fill-mode: backwards;
-  animation-delay: 875ms;
+  animation-delay: 700ms;
 }
 @keyframes appear {
   from {
@@ -695,6 +695,38 @@ p {
   }
 }
 .plate_card.card--8 {
+  animation-name: appear;
+  animation-duration: 1000ms;
+  animation-fill-mode: backwards;
+  animation-delay: 800ms;
+}
+@keyframes appear {
+  from {
+    transform: translateY(-3rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.plate_card.card--9 {
+  animation-name: appear;
+  animation-duration: 1000ms;
+  animation-fill-mode: backwards;
+  animation-delay: 900ms;
+}
+@keyframes appear {
+  from {
+    transform: translateY(-3rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.plate_card.card--10 {
   animation-name: appear;
   animation-duration: 1000ms;
   animation-fill-mode: backwards;
@@ -787,6 +819,10 @@ button p {
 
 button:hover {
   cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -923,7 +959,7 @@ body .restaurants_title {
   margin-bottom: 2rem;
 }
 .restaurant_menu_header_title {
-  margin-right: 1.75rem;
+  margin-right: auto;
 }
 .restaurant_menu_header_title p {
   font-family: "Shrikhand", sans-serif;
