@@ -79,3 +79,9 @@ $num-cards: 10;
         }
     }
 }
+
+@include a.medium-screen {
+    .plate_card {
+        background-color: a.$gray-lighter;
+    }
+}

@@ -802,6 +802,11 @@ p {
   transform: rotate(360deg);
 }
 
+@media (min-width: 992px) {
+  .plate_card {
+    background-color: #f6f6f6;
+  }
+}
 button {
   color: #fff;
   border-radius: 30px;
@@ -1060,6 +1065,26 @@ body .restaurants_title {
 .restaurant_menu_button p {
   margin-left: 2rem;
   margin-right: 2rem;
+}
+
+@media (min-width: 992px) {
+  body {
+    background-color: #fff;
+  }
+  body .restaurant_menu {
+    background-color: #fff;
+  }
+  body .restaurant_menu_header_title {
+    margin-right: 1rem;
+  }
+  body .restaurant_menu_offer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  body .restaurant_menu_offer_meal {
+    width: 48%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

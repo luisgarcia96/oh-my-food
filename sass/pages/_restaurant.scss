@@ -104,3 +104,32 @@
         }
     }
 }
+
+@include a.medium-screen {
+    body {
+        background-color: a.$color-white;
+
+        .restaurant {
+            &_menu {
+                background-color: a.$color-white;
+
+                &_header{
+                    &_title {
+                        
+                        margin-right: 1rem;
+                    }
+                }
+
+                &_offer{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    &_meal {
+                        width: 48%;
+                    }
+                }
+            }
+        }
+    }
+}
