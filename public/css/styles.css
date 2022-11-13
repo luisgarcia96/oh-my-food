@@ -572,6 +572,12 @@ p {
   color: #000;
 }
 
+@media (min-width: 992px) {
+  .card {
+    width: 49%;
+    margin-bottom: 1.6rem;
+  }
+}
 .plate_card {
   background-color: #fff;
   border-radius: 1rem;
@@ -942,6 +948,40 @@ body .restaurants_title {
   margin-bottom: 1rem;
 }
 
+@media (min-width: 992px) {
+  body .fonctionnement_content {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .fonctionnement_content_step {
+    flex-grow: 1;
+    margin: 0 1rem;
+  }
+  body .restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  body .restaurants_title {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    max-width: 75rem;
+    margin: 0 auto;
+    background-color: #fff;
+  }
+  body .header .logo_container {
+    width: 100vw;
+  }
+  body .discover_invitation {
+    background-color: #fff;
+  }
+  body .fonctionnement {
+    padding: 1rem 1rem;
+  }
+}
 .restaurant_image_container img {
   width: 100%;
   max-height: 20rem;

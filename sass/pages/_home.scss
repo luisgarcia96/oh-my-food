@@ -101,3 +101,51 @@ body {
         }
     }
 }
+
+//Responsive
+@include a.medium-screen {
+    body {
+        .fonctionnement {
+            &_content {
+                display: flex;
+                justify-content: space-between;
+
+                &_step {
+                    flex-grow: 1;
+                    margin: 0 1rem;
+                }
+            }
+        }
+
+        .restaurants {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            &_title {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@include a.large-screen {
+    body {
+        max-width: 75rem;
+        margin: 0 auto;
+        background-color: a.$color-white;
+
+        .header {
+            .logo_container {
+                width: 100vw;
+            }
+        }
+
+        .discover_invitation {
+            background-color: a.$color-white;
+        }
+
+        .fonctionnement {
+            padding: 1rem 1rem;
+        }
+    }
+}

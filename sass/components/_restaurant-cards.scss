@@ -76,3 +76,10 @@
         color: a.$color-black;
     }
 }
+
+@include a.medium-screen {
+    .card {
+        width: 49%;
+        margin-bottom: 1.6rem;
+    }
+}
