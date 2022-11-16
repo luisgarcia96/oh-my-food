@@ -807,28 +807,27 @@ p {
     background-color: #f6f6f6;
   }
 }
-button {
+.button {
   color: #fff;
+  text-decoration: none;
   border-radius: 30px;
   border: 0;
-  padding: 0 1rem 0 1rem;
+  padding: 1rem 1rem;
+  min-width: 12rem;
   background: linear-gradient(350deg, #9356dc 35%, #ff79da 100%);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px;
   transition: all 200ms ease;
 }
-button:hover {
+.button:hover {
   opacity: 0.9;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 10px;
   transform: scale(1.01);
 }
-button:active {
+.button:active {
   transform: scale(1.02);
 }
-button p {
-  margin: 1rem 0;
-}
 
-button:hover {
+.button:hover {
   cursor: pointer;
 }
 
@@ -864,11 +863,11 @@ body .discover_invitation_title {
 }
 body .discover_invitation_description {
   margin: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   padding: 0 1rem;
 }
 body .discover_invitation_button {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 body .discover_invitation_button p {
   margin: 1.125rem 0.75rem 1.125rem 0.75rem;
