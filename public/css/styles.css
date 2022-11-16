@@ -415,6 +415,8 @@ p {
 }
 
 .footer {
+  display: flex;
+  flex-direction: column;
   background-color: #353535;
   padding: 2rem;
   opacity: 0;
@@ -441,6 +443,7 @@ p {
 }
 .footer_list {
   padding: 0;
+  margin: 0;
 }
 .footer_list_element {
   list-style: none;
@@ -460,6 +463,20 @@ p {
   margin: 0;
 }
 
+@media (min-width: 1200px) {
+  .footer {
+    align-items: center;
+  }
+  .footer_list {
+    display: flex;
+  }
+  .footer_list_element {
+    margin-right: 2rem;
+  }
+  .footer_list_element a i {
+    margin-right: 0.5rem;
+  }
+}
 .loader_container {
   position: absolute;
   top: 50%;

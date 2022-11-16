@@ -1,6 +1,8 @@
 @use "../abstracts" as a;
 
 .footer {
+    display: flex;
+    flex-direction: column;
     background-color: a.$gray-darker;
     padding: 2rem;
     @include a.opacity-appear;
@@ -17,6 +19,7 @@
 
     &_list {
         padding: 0;
+        margin: 0;
 
         &_element {
             list-style: none;
@@ -36,6 +39,26 @@
 
                 p {
                     margin: 0;
+                }
+            }
+        }
+    }
+}
+
+@include a.large-screen {
+    .footer {
+        align-items: center;
+
+        &_list {
+            display: flex;
+
+            &_element {
+                margin-right: 2rem;
+
+                a {
+                    i {
+                        margin-right: 0.5rem;
+                    }
                 }
             }
         }
