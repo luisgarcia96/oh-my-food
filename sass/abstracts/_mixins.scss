@@ -1,5 +1,4 @@
 @use "./variables" as v;
-//Make the gadient mixin to be a fonction of an input color
 
 @mixin box-shadow{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px;
