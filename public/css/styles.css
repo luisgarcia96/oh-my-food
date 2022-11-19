@@ -589,10 +589,20 @@ p {
   color: #000;
 }
 
+@media (min-width: 768px) {
+  .card {
+    margin-bottom: 1.6rem;
+  }
+  .card_image_container {
+    height: 15rem;
+  }
+}
 @media (min-width: 992px) {
   .card {
     width: 49%;
-    margin-bottom: 1.6rem;
+  }
+  .card_image_container {
+    height: 15rem;
   }
 }
 .plate_card {
