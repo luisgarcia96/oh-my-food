@@ -452,6 +452,7 @@ p {
 .footer_list_element a {
   text-decoration: none;
   display: flex;
+  color: #fff;
 }
 .footer_list_element a:visited {
   color: #fff;
